@@ -1,24 +1,34 @@
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Home from 'pages/Home';
-import Navbar from 'components/Navbar';
-import Catalog from 'pages/Catalog';
-import Admin from 'pages/Admin';
+import React from "react";
+import './app.scss';
+import { Router, Switch, Route, Redirect } from "react-router-dom";
+import Navbar from "./core/components/Navbar";
+import Admin from "./pages/Admin";
+import Catalog from "./pages/Catalog";
+import Home from "./pages/Home";
+import ProductDetails from "./pages/Catalog/components/ProductsDetails";
+import Auth from "pages/Auth";
+import history from "./core/utils/history";
+import PrivateRoute from "core/components/Routes/PrivateRoute";
 
 const Routes = () => (
-  <BrowserRouter>
+  <Router history={history}>
     <Navbar />
     <Switch>
       <Route path="/" exact>
         <Home />
       </Route>
-      <Route path="/products">
+      <Route path="/products" exact>
         <Catalog />
       </Route>
-      <Route path="/admin">
-        <Admin />
+      <Route path="/products/:productId">
+        <ProductDetails />
+      </Route>
+      <Redirect from="/auth" to="/auth/login" exact />
+      <Route path="/auth">
+        <Auth />
       </Route>
     </Switch>
-  </BrowserRouter>
+  </Router>
 );
 
 export default Routes;
