@@ -17,7 +17,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="row bg-primary main-nav">
+    <nav className="row bg-success main-nav">
       <div className="col-3">
         <Link to="/" className="nav-logo-text">
           <h4>Trade Target</h4>
@@ -25,7 +25,7 @@ const Navbar = () => {
       </div>
       <div className="col-6">
         <ul className="main-menu">
-          <li>
+          {/* <li>
             <NavLink to="/" className="nav-link" activeClassName="active" exact>
               HOME
             </NavLink>
@@ -38,12 +38,12 @@ const Navbar = () => {
             >
               CATALOG
             </NavLink>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <NavLink to="/admin" className="nav-link" activeClassName="active">
               ADMIN
             </NavLink>
-          </li>
+          </li> */}
         </ul>
       </div>
       <div className="col-3 text-right">

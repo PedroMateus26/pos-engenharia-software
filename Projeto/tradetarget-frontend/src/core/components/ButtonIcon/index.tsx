@@ -8,7 +8,7 @@ type Propps = {
 
 const ButtonIcon = ({text}:Propps) => (
     <div className="d-flex">
-        <button className="btn btn-primary btn-icon">
+        <button className="btn btn-primary bg-success btn-icon">
             <h5>{text}</h5>
         </button>
         <div className="btn-icon-conten">

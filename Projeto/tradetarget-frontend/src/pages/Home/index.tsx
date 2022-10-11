@@ -9,10 +9,10 @@ const Home = () => (
     <div className="home-container">
         <div className="row home-content border-radius-20">
             <div className="col-6 home-text">
-                <h1 className="text-title">Conheça o melhor <br /> buscador de ativos do mercado</h1>
-                <p className="text-subtitle">Ajudaremos você a encontrar os melhores <br /> ativos para o seu perfil.</p>
-                <Link to="/products">
-                <ButtonIcon text="INICIE AGORA A SUA BUSCA"/>
+                <h1 className="text-title">A melhor maneira de<br />acompanhar seus ativos</h1>
+                <p className="text-subtitle">Conheça o melhor buscador <br /> de ativos do mercado.</p>
+                <Link to="/auth/login" className="nav-link active">
+                <ButtonIcon text="VER MEIS ATIVOS"/>
                 </Link>
                 
             </div>
