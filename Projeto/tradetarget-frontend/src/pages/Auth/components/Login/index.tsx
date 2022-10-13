@@ -28,7 +28,6 @@ const Login = () => {
     makeLogin(data)
       .then((response) => {
         setHasError(false);
-        console.log(`valor da variável state ${location.state}` );
         SaveSessionData(response.data);
         history.replace(from);
       })
