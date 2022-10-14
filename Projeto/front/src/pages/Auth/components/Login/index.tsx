@@ -74,18 +74,18 @@ const Login = () => {
             </div>
           )}
         </div>
-
+{/* 
         <Link to="/auth/recover" className="login-link-recover">
           Esqueci a senha?
-        </Link>
+        </Link> */}
         <div className="login-submmit">
           <ButtonIcon text="LOGAR" />
         </div>
         <div className="text-center">
-          <span className="not-registered">Não tem Cadastro?</span>
+          {/* <span className="not-registered">Não tem Cadastro?</span>
           <Link to="/auth/register" className="login-link-register">
             Cadastrar
-          </Link>
+          </Link> */}
         </div>
       </form>
     </AuthCard>
