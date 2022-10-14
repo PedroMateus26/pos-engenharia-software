@@ -6,7 +6,7 @@ import List from './List';
 const Products=()=>{
     return (
         <div>
-            <Link to="/admin/products" className="mr-5">
+            {/* <Link to="/admin/products" className="mr-5">
                 Listar produtos
             </Link>
             <Link to="/admin/products/create" className="mr-5">
@@ -14,8 +14,8 @@ const Products=()=>{
             </Link>
             <Link to="/admin/products/:productId" className="mr-5">
                 Editar produtos
-            </Link>
-            <Switch>
+            </Link> */}
+            {/* <Switch>
                 <Route path="/admin/products" exact>
                     <List/>
                 </Route>
@@ -25,7 +25,7 @@ const Products=()=>{
                 <Route path="/admin/products/:productId">
                     
                 </Route>
-            </Switch>
+            </Switch> */}
         </div>
     )
 }

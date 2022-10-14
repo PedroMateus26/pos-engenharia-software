@@ -39,9 +39,9 @@ const List = () => {
 
   return (
     <div className="admin-product-list">
-      <button className="btn btn-primary btn-lg" onClick={handleCreate}>
+      {/* <button className="btn btn-primary btn-lg" onClick={handleCreate}>
         ADICIONAR
-      </button>
+      </button> */}
       <div className="admin-list-container">
         {productResponse?.content.map((product) => (
           <Card key={product.id} product={product} />
